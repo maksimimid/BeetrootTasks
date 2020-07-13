@@ -1,1 +1,44 @@
-div {display: ;}
+.container {
+    background-image: url(images/GRID.png);
+    background-repeat: no-repeat;
+    background-position: center; 
+    height: 420px;
+    width: 100%;
+    background-color: #121116;
+}
+.logo {
+    display: block;
+    padding-top: 120px;
+    margin: 0 auto;
+    width: 112px;
+}
+
+.we-are-soc {
+    display: block;
+    padding-top: 55px;
+    margin: 0 auto;
+    width: 158px;
+}
+.separator{
+    display: block;
+    padding-top: 21px;
+    margin: 0 auto;
+    width: 230px;
+}
+
+.icons {
+        margin: auto;
+        padding: auto;
+        padding-left:46px;
+}
+.icons img{
+        text-align: center;
+        margin-right:25px 
+        }
+.casper{
+    display: block;
+    margin: 0 auto;
+    padding-top:89px;
+    width: 250px;  
+}
+
