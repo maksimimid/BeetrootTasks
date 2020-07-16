@@ -57,3 +57,13 @@ a:link {
 a:visited {
     color:rgb(124, 85, 129);
   }
+
+
+.pnz::after {
+    content: '';
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    display: inline-block;
+    background: url(icons/passed.jpg) no-repeat;
+}
