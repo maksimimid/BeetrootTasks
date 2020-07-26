@@ -1,6 +1,7 @@
 .wrapper {
     background: url(icons/bg_t.png);
     width: 100%;
+    background-repeat: no-repeat;
 }
 .header {
     display: flex;
@@ -15,6 +16,7 @@
 .list__item {
     
     display: inline-block;
+    margin-left: 5px;
 }
 .item__link {
     color: white;
@@ -26,3 +28,12 @@
     /* line-height: 10px;
     font-size: 1px; */
 }
+.btn__line {
+    margin-left: 75px;
+    height: 8px;
+    color: white;
+}
+.list__item:hover {
+    border-bottom: solid 2px white;
+}
+

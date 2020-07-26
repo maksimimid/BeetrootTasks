@@ -1,0 +1,117 @@
+@font-face {
+    font-family: "MuseoSansRounded";
+    src: url('font/MuseoSansRounded.woff');
+}
+.content {
+    width: 800px;
+    margin: auto;
+    background: url(Group\ 3\ copy.png), url(Layer\ 5.png);
+    background-color: #C5C5C8;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.content-сontainer {
+    border-radius: 10px;
+    background-color: rgb(17, 26, 40);
+    box-shadow: 0px 0px 65px 0px rgba(0, 0, 0, 0.82);
+    width: 686px;
+    height: 391px;
+    margin: auto;
+  }
+.content-сontainer__logo {
+    background: url(logo.png);
+    width: 65px;
+    height: 33px;
+    padding-left: 25px;
+    padding-top: 20px;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+.content-container__data {
+    display: flex;
+}
+.bared-img__cont {
+    padding-top: 65px;
+    padding-left: 35px;
+}
+.bared-img__bar {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+.bared-img__bar li {
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #111A28;
+    margin: 3px;
+}
+.bared-img__bar li:hover {
+    border-width: 2px;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-radius: 50%;
+}
+.bar__blue {
+    background-color: rgb(41, 227, 234);
+}
+.bar__red {
+    background-color: rgb(237, 51, 51);   
+}
+.bar__white {
+    background-color: #FFFFFF;   
+}
+.bar__black {
+    background-color: #1F273F;
+}
+.data__input-data {
+    padding-left: 80px;
+    padding-top: 20px;
+    font-family: "MuseoSansRounded";
+}
+.input-data__title {
+    font-size: 24px;
+    color: rgb(225, 225, 225);
+    margin: 0;
+}
+.input-data__subtitle {
+    font-size: 14px;
+    color: rgba(225, 225, 225, 0.541);
+    margin: 0;
+    margin-top: 15px;
+    line-height: 26px;
+  }
+  .form__selection--style {
+    border-width: 1px;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    color: rgb(225, 225, 225);
+    background-color: rgb(17, 26, 40);
+    opacity: 0.3;
+    width: 67px;
+    height: 30px;
+  }
+  .form__selection--style{
+    text-align-last:center
+  }
+  .input-data__status {
+      display: inline-block;
+      margin-top: 25px;
+  }
+  .size__form {
+      padding-top: 25px;
+  }
+  .input-data__button {
+    border-width: 1px;
+    border-color: #585E68;
+    border-style: solid;
+    background-color: #202835;
+    width: 182px;
+    height: 38px;
+    color: #B1B3B6;
+    margin-top: 25px;
+
+  }
