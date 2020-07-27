@@ -1,25 +1,28 @@
 main {
-    margin: auto;
-    margin-top: calc(50vh - 700px/2);
-    width: 800px;
-    height: 700px;
+    width: 100%;
+    height: 100vh;
     background-color: #3399CC;
     border: 30px solid;
     border-color: #2B81AC;
-    color: white
+    color: white;
+    box-sizing: border-box;
 }
-.content-container {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 600px;
-    height: 400px;
-    background-color: red;
+ul {
+    font-size: 0;
+    list-style: none;
+    padding: 0;
+    width: 60%;
+    height: 60%;
+    background-color:whitesmoke;
     margin: auto;
     text-align: center;
     border: white 3px solid;
 }
-.content-container div{
+li {
     box-sizing: border-box;
+    display: inline-block;
+    width: 5%;
+    height: 5%;
     border: white 3px solid;
 }
 .one {
@@ -70,8 +73,17 @@ main {
     background-color: #666699;
 }
 p {
-    font-size: large;
+    font-size: 2vh;
+    margin-block-start: 2vh;
+    margin-block-end: 2vh
 }
 small {
     color: whitesmoke;
+    font-size: 2vh;
 }
+ul:hover li{   
+    opacity: 0.7;
+  }
+ul li:hover{
+    opacity: 1;
+  }
