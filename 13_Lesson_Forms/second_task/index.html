@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+
+        <input type="radio" name="radio" id="sign-in" checked>
+        <input type="radio" name="radio" id="join-us">
+        <label id="label-sign-in" class="label-for-radio" for="sign-in">Sign in</label>
+        <label id="label-join-us" class="label-for-radio" for="join-us">Join us</label>
+
+
+        <form class="content-sign-in">
+
+            <div class="contain" action="#" method="GET">
+                <label for="username">Username</label>
+                <input class="infield" type="text" name="username" id="username" minlength="3">
+            </div>
+            <div class="contain">
+                <label for="password">Password</label>
+                <input class="infield" type="password" name="password" id="password" minlength="3">
+            </div>
+            <div style="display:flex;justify-content: baseline;"><input class="chk-box-style" type="checkbox" id="check"
+                    name="check"><label for="check">Keep me signed
+                    in</label></div>
+
+            <div>
+                <button class="btn-special" type="submit">Sign in</button>
+            </div>
+
+            <div style="margin-top: 25px; height: 15px;">
+                <div class="downtstairs">
+                    <a href="#">Forgot password</a>
+                    <a href="#">Create an account</a>
+                </div>
+            </div>
+
+        </form>
+        <div class="content-join-us">
+            <form action="#" method="GET">
+
+                <div class="contain" action="#" method="GET">
+                    <label for="username">Username</label>
+                    <input class="infield" type="text" name="username" id="username" minlength="3">
+                </div>
+                <div class="contain">
+                    <label for="password">Password</label>
+                    <input class="infield" type="password" name="password" id="password" minlength="3">
+                </div>
+                <div class="contain">
+                    <label for="password">Repeat password</label>
+                    <input class="infield" type="password" name="password" id="password" minlength="3">
+                </div>
+                <div>
+                    <button class="btn-special" type="submit">Join in</button>
+                </div>
+            </form>
+
+
+        </div>
+
+
+
+    </main>
+</body>
+
+</html>
