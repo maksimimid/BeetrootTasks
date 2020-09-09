@@ -1,0 +1,133 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+p {
+    margin: 0;
+    font-size: 14px;
+}
+.wrapper {
+    display: flex;
+    width: 850px;
+    background-color: white;
+    box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
+    margin: 0 auto; 
+}
+.wrapper>div{ 
+padding-top: 25px;
+}
+
+.general-info {
+    width: 250px;
+    background-color: white;
+    box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background: rgb(92, 88, 110);
+}
+.general-info__item {
+    margin-right: 20px;
+}
+.general-info__item h3 {
+    padding-left: 15px;
+}
+.my-photo {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    object-position: 50% 50%;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.about-list {
+    list-style-type: none;
+}
+.extended-info {
+    display: block;
+    margin: 15px;
+}
+.general-info__item{
+    margin:0;
+    text-align: left;
+    padding-left: 0;
+}
+
+.cooperaraion-element__link {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    margin-bottom: -10px;
+}
+.about-list__link {
+    color:white;
+}
+.about-list__email{
+    margin-right: 20px;
+}
+.cooperaraion-element__link--text:hover ,.about-list__link:hover {
+    color: coral;
+  }
+
+.cooperaraion-element {
+    margin-left: 10px;
+}
+.cooperaraion-element__example-link{
+    font-size: 14px;
+    margin-left: 25px;
+}
+.cooperaraion-element  p, small{
+    margin-left: 25px;
+}
+.name-label {
+    background-color: rgb(163 164 185);
+    transform: translateX(-30px);
+    font-size: 30px;
+    padding: 15px;
+    color: white;
+}
+small {
+    color: #a3a4b9;
+    font-size: 12px;
+}
+h1 {
+    margin-bottom: 0px;
+    margin-top: 5px;
+    font-size: 15pt
+}
+.cooperation-list {
+    margin-bottom: 0px;
+    margin-top: 5px;
+    font-size: 13pt;
+    font-weight: bold;
+}
+.topcorner {
+    position: relative;
+    top: 0px;
+    right: 0px;
+}
+.soft-skills:hover \ .soft-skill {
+    background-color:rgb(138, 138, 247);
+    color:white;
+}
+.hard-skills:hover \ .hard-skill {
+    background-color:rgb(138, 138, 247);
+    color:white;
+}
+.name-label p:first-child {
+    font-size: 30px;
+    font:bold;
+}
+.name-label p:nth-child(2) {
+    font-size: 15px;
+}
+.main-text {
+    margin-left: 35px;
+}
+.about-list li {
+    font-size: 14px;
+}
+@media (max-width:768px) {
+    .wrapper {
+        width: 600px; 
+}
+}

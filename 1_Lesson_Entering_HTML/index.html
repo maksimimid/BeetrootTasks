@@ -5,110 +5,147 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vozniyk Maksim</title>
-    <style>
-        small {
-            color: gray;
-            font-size: 7pt;
-        }
 
-        h1 {
-            margin-bottom: 0px;
-            margin-top: 5px;
-            font-size: 15pt
-        }
-
-        h2 {
-            margin-bottom: 0px;
-            margin-top: 5px;
-            font-size: 13pt;
-            font-weight: normal;
-        }
-
-        .topcorner {
-            position: relative;
-            top: 0px;
-            right: 0px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <!-- MAIN -->
-    <div style="width: 750px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: white;
-    box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);display: block; margin: 0 auto;">
-        <!-- My photo container -->
-        <div style="display:inline-block;width: 40%;margin-left: 15px;">
-            <img src="images/My_photo.jpg" width="200">
-        </div>
-        <!-- My general info container -->
-        <div style="display:inline-block;text-align: right;width: 53%;">
-            <div class="topcorner">
-                <a href="index.html" , style="display: inline-block;">EN</a>
-                <a href="CV_ua.html" , style="display: inline-block;">UA</a>
+    <div class="wrapper">
+        <div class="general-info">
+            <img class="my-photo" src="images/My_photo.jpg">
+            <div class="general-info__item">
+
+                <h3>Skills</h3>
+                <ul class="about-list">
+                    <li class="soft-skills">
+                        <p>Soft Skills</p><small>(hover to see)</small>
+                    </li>
+                    <li class="hard-skills">
+                        <p>Hard Skills</p><small>(hover to see)</small>
+                    </li>
+                </ul>
             </div>
-            <b>GIS specialist|Python developer</b>
-            <ul style="list-style-type: none;">
-                <li>Vonziyk Maksim</li>
-                <li>27 age</li>
-                <li>Mobile: +** (***) ***-**-**</li>
-                <li>E-mail: maksimvozniyk@gmail.com</li>
-                <li><a href="https://www.linkedin.com/in/maksim-vozniyk-3504181a7">LinkedIn</a> </li>
-            </ul>
+            <div class="general-info__item">
+                <h3>Languages</h3>
+                <ul class="about-list">
+                    <li>English: Conversational</li>
+                    <li>Ukrainian: Native or Bilingual</li>
+                    <li>Russian: Fluent</li>
+                </ul>
+            </div>
+            <div class="general-info__item">
+                <h3>Contact</h3>
+                <ul class="about-list">
+                    <li class="about-list__email">maksimvozniyk@gmail.com</li>
+                    <li><a class="about-list__link"
+                            href="https://www.linkedin.com/in/maksim-vozniyk-3504181a7">LinkedIn</a> </li>
+                </ul>
+            </div>
         </div>
-        <!-- My extended info container -->
-        <div style="display: block;margin: 15px ;">
-            <h1>Introduction</h1>
-            <section style="margin-left: 25px;">
-                I'm very interested in maps making and optimization of routine
-                cartographic work with Python. I
-                have over 7 years experience working with GIS and CAD. I'm working with GIS data conversions from
-                any sourses to different formats. I was oriented to produce modern map visualization, constructing a
-                beautiful map of terrain, thematic maps, heat maps. I have a good background in floorplans design
-                for infrastructure facilities
-            </section>
-            <h1>Projects</h1>
-            <section style="margin-left: 25px;">
-                <a href="https://maksimimid.github.io/CAD-to-MAP/">CAD drawing to navigation Map - conversion
-                    example</a><br>
-                <i style="color: dimgray;">*Sorry this part is under construction there are only one link available</i>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo facilis fuga fugiat sapiente itaque
-                    corporis. Omnis sapiente ex eos rem labore! Atque asperiores laudantium voluptate expedita,
-                    voluptatem consectetur hic perferendis.</p>
-            </section>
-            <h1>Cooperation experience</h1>
-            <section style="margin-left: 25px;">
-                <h2>GIS specialist at <a href="https://mggp.com.pl/"><img src="images/MGGP.png" width="50"></a></h2>
-                <small>2012 - 2014 | Ukraine</small>
-                <ul style="list-style-type:square;">
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Enim et minima nisi culpa?</li>
-                    <li>Tenetur rem reprehenderit iusto porro.</li>
-                </ul>
-                <h2>Land management engineer <a href="https://www.ukragroholding.com/"><img src="images/UAH.png"
-                            width="75"></a>
-                </h2>
-                <small>2014 - up to now | Ukraine</small>
-                <ul style="list-style-type:square;">
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Enim et minima nisi culpa?</li>
-                    <li>Tenetur rem reprehenderit iusto porro.</li>
-                </ul>
-                <h2>GIS specialist at <a href="https://www.pointr.tech/"><img src="images/Pointr.svg" width="50"></a>
-                </h2>
-                <small>2018 - up to now | UK</small>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt vero incidunt illo nihil ipsa
-                    tempora quo esse dolorem porro quasi.</p>
-            </section>
+        <main class="extended-info">
+            <div class="name-label">
+                <p>Vonziyk Maksim</p>
+                <p>GIS specialist | Python developer</p>
+            </div>
+
+            <div class="extended-info__item">
+                <h2 class="cooperation-list">Intro</h2>
+                <p class="main-text">
+                    Hello. I'm a GIS specialist and I'm working on maps creation and searching for ways to make GIS
+                    workflows more efficient. I'm very interested in optimization/automation of routine
+                    cartographic work with Python. I can develop stand alone or integrated GIS scripts for data
+                    converions or a custom tools for existing GIS
+                    software. Past several years I was oriented to produce modern map visualization, constructing a
+                    beautiful map of terrain, thematic maps, heat maps. I have a good background in floorplans design
+                    for infrastructure facilities.
+                    Best regards
+                </p>
+            </div>
+
+            <div class="extended-info__item">
+                <h2 class="cooperation-list">Cooperation experience</h2>
+
+                <div class="cooperaraion-element">
+                    <a class="cooperaraion-element__link" href="https://here.com/"><span
+                            class="cooperaraion-element__link--text">GIS intern at</span> <img
+                            src="images/Here_logo_maps-700x542.png" width="35"></a>
+                    <small>2012 | Ukraine</small>
+                    <p>The main skills what I got here was: <span class="hard-skill">ArcGIS</span>, data management,
+                        data entry</p>
+                </div>
+
+                <div class="cooperaraion-element">
+                    <a class="cooperaraion-element__link" href="https://mggp.com.pl/"><span
+                            class="cooperaraion-element__link--text">GIS specialist at</span> <img src="images/MGGP.png"
+                            width="40"></a>
+                    <small>2012 - 2014 | Ukraine</small>
+                    <p>The main skills what I got here was: georefferencing, geocoding, <span class="hard-skill">SQL
+                            databases</span>,
+                        spatial data formats</p>
+                </div>
+
+                <div class="cooperaraion-element">
+                    <a class="cooperaraion-element__link" href="https://www.ukragroholding.com/"><span
+                            class="cooperaraion-element__link--text">Land management
+                            engineer</span> <img src="images/UAH.png" width="60"></a>
+
+                    <small>2014 - up to now | Ukraine</small>
+
+                    <p>The main skills what I got here was: <span class="soft-skill">teamwork</span>,
+                        <span class="soft-skill">stress resistance</span>, <span class="hard-skill">python</span>, data
+                        processing, maps design -
+                        visualisation, MSSQL, drones, orthophoto processing, elevation, heatmap, <span
+                            class="hard-skill">topography</span>, gps
+                        surveying</p>
+
+
+                </div>
+                <div class="cooperaraion-element">
+                    <a class="cooperaraion-element__link" href="https://www.pointr.tech/"><span
+                            class="cooperaraion-element__link--text">GIS specialist at</span> <img
+                            src="images/Pointr.svg" width="40"></a>
+
+                    <small>2018 - up to now | UK</small>
+                    <p>The main skills what I got here was: <span class="soft-skill">time management</span>, <span
+                            class="hard-skill">QGIS
+                            processing scripts</span> , <span class="hard-skill">Goole API</span>,
+                        automatization,
+                        maps exporting, Apple IMDF format conversion, taxonomy and categorization</p>
+                    <a class="cooperaraion-element__example-link" href="https://maksimimid.github.io/CAD-to-MAP/">This
+                        example represents what type of maps we are
+                        producing</a>
+
+                </div>
+                <div class="cooperaraion-element">
+                    <a class="cooperaraion-element__link" href="#"><span
+                            class="cooperaraion-element__link--text">Freelancer</span> <img
+                            src="images/upwork-vector-logo.png" width="40"></a>
+
+                    <small>2018 - up to now</small>
+                    <p>The main skills what I got here was: <span class="soft-skill">be in touch with client</span>, WEB
+                        technologies for map
+                        publication MapBox, <span class="hard-skill">ArcGIS Online</span>,
+                        QWC (QGIS WEB Client), stand alone python scripts for processing, front-end developing
+                        (HTML/CSS/JavaScript), back-end developing (based on
+                        Django and Flask), <span class="hard-skill">git</span>, <span class="hard-skill">REST API</span>
+                    </p>
+                </div>
+
+
+
+            </div>
             <h1>Education</h1>
-            <section style="margin-left: 25px;">
-                <p>National University of Water and Environmental Engineering<br>GIS specialist</p>
+            <div style="margin-left: 25px;">
+                <p>National University of Water Management and Nature Resources Use
+                    Master's degree, GIS</p>
+                <small>2009-2014</small>
                 <br>
-            </section>
-        </div>
+            </div>
+        </main>
     </div>
 
+    <script src="https://rouninmedia.github.io/axe/axe.js"></script>
 </body>
 
 </html>
