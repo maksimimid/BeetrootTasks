@@ -1,0 +1,218 @@
+@import "variables.scss";
+@import "mixins.scss";
+* {
+  margin:0;
+  padding:0;
+}
+body {
+  background-color: #e1e3e6;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.content-container {
+  margin: 0 auto;
+  text-align: center;
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  &__small-title {
+      font-size: 18px;
+      font-family: "Myriad Pro";
+      color: rgb(137, 143, 143);
+      text-align: center;
+    }
+
+  &__title {
+      font-size: 60px;
+      font-family: "Roboto";
+      color: #ffcc00;
+      text-align: center;
+  }
+
+  &__bonfire {
+ 
+    position: relative;
+    margin:auto;
+  }
+  &__bonfire::before {
+    content: '';
+    border: .5px rgb(255, 204, 0) solid;
+    width: 100px;
+    display: inline-block;
+    position: absolute;
+    top:50%;
+    right: 150%;
+  }
+  &__bonfire::after {
+    content: '';
+    border: .5px rgb(255, 204, 0) solid;
+    width: 100px;
+    display: inline-block;
+    position: absolute;
+    top:50%;
+    left: 150%;
+  }
+
+  &__slider {
+   
+  }
+}
+.bonfire {
+  width: 20px;
+  height: 20px;
+  fill: #ffcc00;
+}
+.slider {
+
+  &__general {
+    display: flex;
+    align-items: center;
+
+  }
+
+  &__content {
+    display: flex;
+    padding: 25px
+  }
+
+  &__img {
+    background: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='rgb(255, 204, 0)' stroke-width='3' stroke-dasharray='194' stroke-dashoffset='100' stroke-linecap='square'/%3e%3c/svg%3e");
+    background-size: contain;
+    width: 388px;
+    height: 388px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__info {
+    margin-left: 25px;
+    padding-left: 25px;
+    
+    width: 40%;
+    text-align: center;
+    border-left: .5px rgb(255, 204, 0) solid;
+  }
+  .photo{
+    border:.5px rgb(255, 204, 0) solid;
+    width: 360px;
+    height: 360px;
+    margin: 14px;
+  }
+}
+
+.info {
+  &__name {
+      font-size: 36px;
+      font-family: "Roboto";
+      color: rgb(102, 102, 102);
+  }
+
+  &__divider {
+    border:.5px rgb(255, 204, 0) solid;
+    width: 100px;
+    display: inline-block;
+  }
+
+  &__job {
+    font-size: 24px;
+    font-family: "Raleway";
+    color: rgb(102, 102, 102);
+    line-height: 1.5;
+  }
+
+  &__icons {
+  }
+
+  &__text {
+
+      font-size: 14px;
+      font-family: "Myriad Pro";
+      color: rgb(51, 51, 51);
+      line-height: 1.714;
+      text-align: center;
+  }
+
+  &__dashed-divider {
+
+    width: 50px;
+    margin: auto;
+    position: relative;
+    box-sizing: border-box;
+    
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  &__dashed-divider:before {
+   
+      content: "";
+      position: absolute;
+      border: 1px dashed rgb(255, 204, 0);
+      top: 0px;
+      bottom: 0px;
+      left: 0px;
+      right: 0px;
+    
+  }
+
+  &__link {
+    border: 1px solid rgb(255, 204, 0);
+    display: block;
+    width: 150px;
+    margin: auto;
+    margin-top: 25px;
+    text-decoration: none;
+    color: rgb(102, 102, 102);
+    font-size: 14px;
+    font-family: "OpenSans";
+    font-weight: bold;
+    padding: 5px;
+     
+  }
+}
+.icons {
+  display: flex;
+  justify-content: center;
+  &__element {
+    border-radius: 50%;
+    width: 25px;
+    height:25px;
+    background: rgb(133, 133, 133);
+    margin: 5px
+  }
+}
+.right-arrow,.left-arrow {
+  width: 20px;
+  height: 20px;
+  fill: rgb(255, 204, 0);
+  cursor: pointer;
+}
+.left-arrow {
+  transform: rotate(90deg);
+}
+.selector {
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+
+  &__element {
+    border-radius: 50%;
+    background: rgb(255, 204, 0);
+    border: 1px solid rgb(255, 204, 0);
+    width: 10px;
+    height:10px;
+    margin: 1px;
+    cursor: pointer;
+    
+  }
+}
+.selected {
+  background: rgba(0, 0, 0, 0);
+}
+.facebook,.twitter,.google,.linkedin {
+  width: 15px;
+  height: 15px;
+  margin-top:5px;
+  cursor: pointer;
+}
