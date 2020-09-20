@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" type="img/jpg" href="img/png/favicon.png" />
+    <link rel="stylesheet" href="dist/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="genheader">
+            <div class="genheader__self-info">
+                <div class="genheader__currency-container currency">
+                    <p class="currency__title">Currency : </p>
+                    <select class="currency__list" id="currency">
+                        <option class="currency__item" value="GBP" selected>GBP</option>
+                        <option class="currency__item" value="USD">USD</option>
+                        <option class="currency__item" value="UAH">UAH</option>
+                    </select>
+                </div>
+                <div class="genheader__register"><a class="genheader__link" href="#">Register</a></div>
+                <div class="genheader__sign-in"><a class="genheader__link" href="#">Sign in</a></div>
+                <div class="genheader__both-list both">
+                    <svg class="cart">
+                        <use xlink:href="img/svg/shopping-cart-solid.svg#cart"></use>
+                    </svg>
+                    <div class="both__container">
+                        <p class="both__text">empty</p>
+                        <ul class="both__list">
+                            <li class="both__item">Item1</li>
+                            <li class="both__item">Item2</li>
+                            <li class="both__item">Item3</li>
+                        </ul>
+
+                    </div>
+                    <svg class="angle-down">
+                        <use xlink:href="img/svg/angle-down-solid.svg#angle-down"></use>
+                    </svg>
+
+                </div>
+            </div>
+            <div class="genheader__general general">
+                <div class="general__logo">
+                    <img src="img/png/logo.png" class="general__logo-img">
+                </div>
+                <nav class="general__nav">
+                    <ul class="general__nav-list">
+                        <li class="general__nav-item">MENS
+                            <div class="nav-item__content">
+                                <div class="content__element-ls">
+                                    <p class="content__element-ls-title">Casual</p>
+                                    <p class="content__element-ls-element">Jackets</p>
+                                    <p class="content__element-ls-element">Hoodies & Sweatshirts</p>
+                                    <p class="content__element-ls-element">Polo Shirts</p>
+                                    <p class="content__element-ls-element">Sportswear</p>
+                                    <p class="content__element-ls-element">Trousers & Chinos</p>
+                                    <p class="content__element-ls-element">T-Shirts</p>
+                                </div>
+                                <div class="content__element-ls">
+                                    <p class="content__element-ls-title">Formal</p>
+                                    <p class="content__element-ls-element">Jackets</p>
+                                    <p class="content__element-ls-element">Shirts</p>
+                                    <p class="content__element-ls-element">Suits</p>
+                                    <p class="content__element-ls-element">Trousers</p>
+                                </div>
+                                <div class="content__element-baner">
+                                    <p>
+                                        Autumn sale!<br>up to 50% off
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="general__nav-item">WOMENS</li>
+                        <li class="general__nav-item">THE BRAND</li>
+                        <li class="general__nav-item">LOCAL STORES</li>
+                        <li class="general__nav-item">LOOK BOOK</li>
+
+                    </ul>
+                </nav>
+                <input class="general__search" placeholder="Search..."></input>
+                <button class="general__search-button button"> <a class="general__search-text" href="#">shop men’s
+                        collection</a></button>
+            </div>
+
+        </header>
+        <main class="content">
+
+            <section class="content__upper-list">
+                <hr class="content__divider">
+                <ul class="categories">
+                    <li class="categories__item">POPULAR</li>
+                    <li class="categories__item">NEW ARRIVALS</li>
+                    <li class="categories__item">BEST SELLERS</li>
+                    <li class="categories__item">SPECIAL OFFERS</li>
+                    <li class="categories__item">COMING SOON</li>
+                </ul>
+                <div class="content__block">
+
+                    <div class="content__items-group">
+                        <div class="content_item">
+                            <img class="md" src="img/png/photo.png" alt="">
+                            <p class="item-price">£89.99</p>
+                        </div>
+                        <div class="content_item">
+                            <img class="md" src="img/png/photo-2.png" alt="">
+                            <p class="item-price">£65.95</p>
+                        </div>
+                        <div class="content_item large">
+                            <img class="md" src="img/png/photo-4.png" alt="">
+                            <p class="item-price">£45.95</p>
+                        </div>
+                    </div>
+                    <div class="content__items-group">
+                        <div class="content_item large">
+                            <img class="md" src="img/png/photo-3.png" alt="">
+                            <p class="item-price">£55.95</p>
+                        </div>
+                        <div class="content_item ">
+                            <img class="content__item--small-covered small md" src=" img/png/photo-6.png" alt="">
+                            <p class="item-price">£29.95</p>
+                            <div class=" info-img-bl">
+                                <p class="info-img-bl__title">Womens burnt orange casual tee £29.95</p>
+                                <p class="info-img-bl__subtitle"></p>Classic casual t-shirt for women on the move.
+                                100% cotton.
+                                A hard-wearing sports t-shirt with microvent technology.</p>
+                                <div class="info-img-bl__container">
+                                    <div class="info-img-bl__icon-div">
+                                        <svg class="cart-info">
+                                            <use xlink:href="img/svg/shopping-cart-solid.svg#cart"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="info-img-bl__icon-div"></div>
+                                    <div class="info-img-bl__icon-div"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content_item small">
+                            <img class="md" src="img/png/photo-5.png" alt="">
+                            <p class="item-price">£49.95</p>
+                        </div>
+                    </div>
+                </div>
+                <hr class="content__divider content__divider--bottom">
+            </section>
+            <section class="content__lower-list ">
+                <div class="list__part list men-bg">
+                    <p class="list__title">MEN'S</p>
+                    <p class="list__subtitle">LOOKBOOK</p>
+                    <P class="list__text">Lorem ipsum dolor sit amet eras facilisis
+                        consectetur adipiscing elit lor, integer lorem consecteur dignissim laciniqui.
+                        Elementum metus facilisis ut phasellu.
+                    </P>
+                    <button class="list__button button"><a class="list__button-text" href="#">VIEW NOW</a></button>
+                </div>
+                <div class="list__part list women-bg">
+                    <p class="list__title">WOMEN'S</p>
+                    <p class="list__subtitle">LOOKBOOK</p>
+                    <P class="list__text">Lorem ipsum dolor sit amet eras facilisis
+                        consectetur adipiscing elit lor, integer lorem consecteur dignissim laciniqui.
+                        Elementum metus facilisis ut phasellu.
+                    </P>
+                    <button class="list__button button"><a class="list__button-text" href="#">VIEW NOW</a></button>
+                </div>
+                <div class="list__part list your-bg">
+                    <p class="list__title">YOUR</p>
+                    <p class="list__subtitle">LOOKBOOK</p>
+                    <P class="list__text">Lorem ipsum dolor sit amet eras facilisis
+                        consectetur adipiscing elit lor, integer lorem consecteur dignissim laciniqui.
+                        Elementum metus facilisis ut phasellu.
+                    </P>
+                    <button class="list__button button"><a class="list__button-text" href="#">VIEW NOW</a></button>
+                </div>
+            </section>
+        </main>
+        <footer class="backyard">
+            <div class="backyard__upper">
+                <div class="backyard__part backyard__part--up mds">
+                    <ul class="backyard__attributes">
+                        <li class="backyard__attr--bold">INFORMATION</li>
+                        <li class="backyard__attr"><a href="#" class="backyard__attr-link">The brand</a></li>
+                        <li class="backyard__attr"><a href="#" class="backyard__attr-link">Local stores</a></li>
+                        <li class="backyard__attr"><a href="#" class="backyard__attr-link">Customer service</a></li>
+                        <li class="backyard__attr"><a href="#" class="backyard__attr-link">Privacy & cookies</a></li>
+                        <li class="backyard__attr"><a href="#" class="backyard__attr-link">Site map</a></li>
+                    </ul>
+                    <ul class="backyard__attributes">
+                        <li class="backyard__attr--bold">WHY BUY FROM US</li>
+                        <li class="backyard__attr"><a href="#" class="backyard__attr-link">Shipping & returns</a></li>
+                        <li class="backyard__attr"><a href="#" class="backyard__attr-link">Secure shopping</a></li>
+                        <li class="backyard__attr"><a href="#" class="backyard__attr-link">Testimonials</a></li>
+                        <li class="backyard__attr"><a href="#" class="backyard__attr-link">Award winning</a></li>
+                        <li class="backyard__attr"><a href="#" class="backyard__attr-link">Ethical trading</a></li>
+                    </ul>
+                    <ul class="backyard__attributes">
+                        <li class="backyard__attr--bold">YOUR ACCOUNT</li>
+                        <li class="backyard__attr"><a href="#" class="backyard__attr-link">Sign in</a></li>
+                        <li class="backyard__attr"><a href="#" class="backyard__attr-link">Register</a></li>
+                        <li class="backyard__attr"><a href="#" class="backyard__attr-link">View cart</a></li>
+                        <li class="backyard__attr"><a href="#" class="backyard__attr-link">View your lookbook</a></li>
+                        <li class="backyard__attr"><a href="#" class="backyard__attr-link">Track an order</a></li>
+                        <li class="backyard__attr"><a href="#" class="backyard__attr-link">Update information</a></li>
+                    </ul>
+                    <ul class="backyard__attributes">
+                        <li class="backyard__attr--bold">LOOKBOOK</li>
+                        <li class="backyard__attr"><a href="#" class="backyard__attr-link">Latest posts</a></li>
+                        <li class="backyard__attr"><a href="#" class="backyard__attr-link">Men’s lookbook</a></li>
+                        <li class="backyard__attr"><a href="#" class="backyard__attr-link">Women’s lookbook</a></li>
+                        <li class="backyard__attr"><a href="#" class="backyard__attr-link">Lookbooks RSS feed</a></li>
+                        <li class="backyard__attr"><a href="#" class="backyard__attr-link">View your lookbook</a></li>
+                        <li class="backyard__attr"><a href="#" class="backyard__attr-link">Delete your lookbook</a></li>
+                    </ul>
+                    <ul class="backyard__attributes">
+                        <li class="backyard__attr--bold">CONTACT DETAILS</li>
+                        <li class="backyard__attr">
+                            Head Office: Avenue Fashion,<br>
+                            180-182 Regent Street, London.</li>
+                        <li class="backyard__attr">
+                            Telephone: 0123-456-789<br>
+                            Email: support@yourwebsite.com</li>
+                    </ul>
+                </div>
+                <div class="backyard__part">
+                    <div class="backyard__upper-rectangle">
+                        <p class="backyard__upper-rectangle-text-title">
+                            award winner
+                        </p>
+                        <p class="backyard__upper-rectangle-text">
+                            fashion awards 2016
+                        </p>
+                    </div>
+                    <div class="backyard__upper-rectangle--turquoise">
+                        <div class="icons__element fb">
+                            <svg class="facebook">
+                                <use xlink:href="img/svg/facebook.svg#facebook"></use>
+                            </svg>
+                        </div>
+                        <div class="icons__element tw">
+                            <svg class="twitter">
+                                <use xlink:href="img/svg/twitter.svg#twitter"></use>
+                            </svg>
+                        </div>
+                        <div class="icons__element gp">
+                            <svg class="google">
+                                <use xlink:href="img/svg/google-plus.svg#google"></use>
+                            </svg>
+                        </div>
+                        <div class="icons__element in">
+                            <svg class="linkedin">
+                                <use xlink:href="img/svg/linkedin.svg#linkedin"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="backyard__lower">
+                <div class="backyard__container">
+
+                    <p class="backyard__lower-left-text">© 2016 Avenue Fashion™</p>
+                    <p class="backyard__lower-right-text">Design by RobbyDesigns.com Dev by Loremipsum.com</p>
+                </div>
+            </div>
+        </footer>
+
+
+
+
+    </div>
+
+</body>
+
+</html>
