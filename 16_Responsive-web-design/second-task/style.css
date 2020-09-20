@@ -1,0 +1,162 @@
+header{
+    background: url('icons/png/hero-bg.jpg.png') no-repeat;
+    background-size: cover;
+    margin: auto;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+.logo {
+    height: 40px;
+}
+h1 {
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.scroll-path { 
+    fill: white
+}
+header:hover  .scroll>.scroll-path{
+    fill: rgb(17, 17, 17);
+    transition: all 0.2s;
+}
+.general-content {
+    text-align: center;
+    padding: 100px;
+}
+.border-container {
+    border-left: 2px solid rgb(60, 60, 60);
+    border-right: 2px solid rgb(60, 60, 60);
+    border-bottom: 2px solid rgb(60, 60, 60);
+    position: relative;  
+    padding: 0 0 10px;
+    text-align: center;
+}
+.title {
+    transform: translateY(-25px);
+    /* background: white; */
+    display: inline-block;
+    width: 150px;
+}
+.content-text {
+    width: 450px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+.bg-img {
+    background: url(icons/png/services.jpg.png) no-repeat;
+    background-size: cover;
+}
+.border-container:before,.border-container:after{
+    border-top: 2px  solid rgb(60, 60, 60);
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 30%;
+}   
+.border-container:before {
+    left: 0;
+  }
+  .border-container:after {
+    right: 0;
+  }
+  .white {
+      color: white;
+  }
+.mosaic {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+ 
+}
+
+  .first-img {
+    background: url('icons/png/Layer 5 copy.png');
+      background-repeat: no-repeat;
+      background-size: cover; 
+      flex: 0 0 30%;
+      box-sizing: border-box;
+      border: white 2px solid;
+  }
+  .sec-img{
+    background: url('icons/png/Layer\ 5\ copy\ 2.png');
+      background-repeat: no-repeat;
+      background-size: cover; 
+      flex: 0 0 30%;
+      box-sizing: border-box;
+      border: white 2px solid;
+  }
+  .thr-img{
+    background: url('icons/png/Layer\ 5\ copy\ 3.png');
+      background-repeat: no-repeat;
+      background-size: cover; 
+      flex: 0 0 30%;
+      box-sizing: border-box;
+      border: white 2px solid;
+  }
+  .fou-img{
+    background: url('icons/png/Layer\ 5\ copy\ 4.png');
+      background-repeat: no-repeat;
+      background-size: cover; 
+      flex: 0 0 30%;
+      box-sizing: border-box;
+      border: white 2px solid;
+  }
+  .fiv-img{
+    background: url('icons/png/Layer\ 5\ copy\ 5.png');
+      background-repeat: no-repeat;
+      background-size: cover; 
+      flex: 0 0 30%;
+      box-sizing: border-box;
+      border: white 2px solid;
+  }
+  .six-img{
+    background: url('icons/png/Layer\ 5\ copy\ 6.png');
+      background-repeat: no-repeat;
+      background-size: cover; 
+      flex: 0 0 30%;
+      box-sizing: border-box;
+      border: white 2px solid;
+  }
+  .title-inside {
+    padding-top: 175px;
+    padding-left: 50px;
+    color: white;
+  }
+
+.mosaic div:nth-child(3n+2){
+    flex: 0 0 40%;
+}
+.contact-btn {
+    background-color: rgb(49, 49, 49);
+    width: 200px;
+    height: 25px;
+    border: none;
+    color: white;
+}
+.backyard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.backyard *{
+    display: inline-block;
+    margin: 5px;
+  
+}
+@media screen and (max-width:900px){
+    header, main, .backyard {
+        width: 600px;
+        margin:auto
+    }
+    .mosaic {
+        width: 475px;
+        margin:auto;
+    }
+    .mosaic div{
+        flex: 1 1 50%;
+    }
+    .content-text {
+        width: 300px;}
+}
