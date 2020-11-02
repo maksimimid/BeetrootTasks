@@ -1,0 +1,26 @@
+
+.second {
+    position: relative;
+}
+.open {
+    
+    width: 300px;
+    height: 300px;
+}
+.modal-window {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color: khaki;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#third div {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: lightgray;
+}
