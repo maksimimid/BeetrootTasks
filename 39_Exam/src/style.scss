@@ -1,0 +1,422 @@
+@import "variables.scss";
+@import "mixins.scss";
+@import "fonts.scss";
+* {
+  margin:0;
+  padding:0;
+}
+body {
+  // background-color: #e1e3e6;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.slider__track {
+  display: flex;
+  height: 500px;
+  align-items: center;
+
+
+}
+
+.slider__item {
+  text-align: center;
+  
+  width: 1170px;
+}
+.navigation {
+  display: flex;
+}
+
+.navigation__logo {
+  width: 240px;
+  height: 54px;
+}
+.header {
+  color: rgb(255, 255, 255);
+  width: 1600px;
+  height: 800px;
+  box-sizing: border-box;
+  padding: 50px 215px 0px 215px;
+  background: 
+  url(../img/header/tu-tram-pham-202263.png) no-repeat center,
+  url(../img/header/Bg.png) no-repeat center;
+
+  background-size: cover;
+  margin: auto;
+
+  &__slider {
+    width: 1170px;
+    text-align: center;
+    
+
+  }
+}
+.navigation {
+  
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+
+  &__menu {
+    display: flex;
+    align-items: center;
+  }
+
+  &__social {
+    width: 160px;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    
+    
+  }
+}
+.icon__circle {
+  height: 40px;
+  width: 40px;
+  border: 1px white solid;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.icon__circle:hover {
+  cursor: pointer;
+  color: black;
+  background-color: white;
+}
+.general-menu__list {
+  list-style: none;
+  display: flex;
+  width: 670px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.general-menu__item {
+  display: flex;
+  align-items: center;
+  width: 168px;
+}
+.general-menu__item-name {
+  font-family: Gotham-book;
+  text-transform: uppercase;
+  font-size: 14px;
+  
+
+}
+
+.general-menu__item-name::before {
+  content: '';
+  margin: 0 14px 0 0; 
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: solid 1px white;
+}
+
+.general-menu__item-name:hover::before{
+  background-color: white;
+}
+.slider-item-first-text {
+  font-family: Gotham-bold;
+  font-size: 80px;
+  text-transform: uppercase;
+}
+.slider-item-second-text{
+  font-family: Gotham-book;
+  text-transform: uppercase;
+  font-size: 18px;}
+
+.slick-dots-header {
+  position: relative;
+  bottom: 0;
+  width: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 210px;
+}
+.slick-dots-header li button::before{
+    border: 1px solid white;
+    width: 10px;
+    height: 10px;  
+    border-radius: 50%;
+    content:''
+}  
+.slick-dots-header li button::before{
+  border: 1px solid white;
+  width: 10px;
+  height: 10px;  
+  border-radius: 50%;
+  content:''
+}  
+.slick-dots-header li.slick-active button::before{
+  background-color: white;
+} 
+
+// Pojects section
+.content {
+  width: 1600px;
+  margin: auto;
+
+  &__underline {
+    width: 100px;
+    height: 1px;
+    border-bottom: 1px rgb(44, 64, 88) solid;
+    margin: auto;
+    margin:100px auto 40px auto;
+    
+  }
+
+  &__title {
+    font-size: 44px;
+  font-family: Gotham-bold;
+  color: rgb(44, 64, 88);
+  text-transform: uppercase;
+  text-align: center;
+  }
+  &__block {
+    // display: flex;
+    // justify-content: space-between;
+    position: relative;
+    padding: 170px 215px 105px 215px;
+    
+  }
+}
+.content__image {
+  display: inline-block;
+  position: relative;
+  width: 625px;
+  height: 470px;
+  background: url(../img/projects/first.png) center no-repeat;
+  background-size: cover;
+  
+
+}
+.content__image::before {
+  content: '';
+  position: absolute;
+  width: 625px;
+  height: 470px;
+  background: url(../img/projects/Back1.png) center no-repeat;
+  transform: translate(-215px,-70px);
+  background-size: cover;
+  z-index: -1;
+
+}
+.content__image--reverse::before  {
+  background: url(../img/projects/Back2.png) center no-repeat;
+  transform: translate(215px,-70px);
+
+}
+.content__image--reverse {
+  background: url(../img/projects/second.png) center no-repeat;
+}
+.content__card--positioned-right {
+  top: 170;
+  position: absolute;  
+}
+// .content__card--positioned-left {
+//   margin-right: 60px;
+// }
+
+.card {
+  width: 540px;
+  padding-left: 70px;
+  padding-top: 60px;
+  display: inline-block;
+  box-sizing: border-box;
+                    
+  
+  &_place {
+    font-size: 18px;
+    font-family: "Myriad Pro";
+    color: rgb(44, 64, 88);
+    
+    text-align: left;
+    font-weight: bold;
+    font-style: italic;
+    padding-top: 60px;
+  }
+
+  &__title {
+    font-family: 'Gotham-regular';
+    font-size: 18px;
+    color: rgb(44, 64, 88);
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    font-family: 'Gotham-bold';
+    font-size: 33px;
+    color: rgb(44, 64, 88);
+    text-transform: uppercase;
+
+  }
+
+  &__explanation {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 18px;
+    font-family: "Myriad Pro";
+    color: rgb(75, 85, 98);
+    text-align: left;
+    line-height: 1.8;
+  }
+
+
+}
+.standart_btn {
+  width: 190px;
+  height: 50px;
+  border: 1px solid black;
+  background-color: white;
+  cursor: pointer;
+}
+.standart_btn:hover {
+  color: white;
+  background-color: black;
+}
+// Section news
+.news {
+  width: 1600px;
+  height: 1035px;
+  margin: auto;
+  background: url(../img/news/bg.png) no-repeat center;
+  background-size: cover;
+  padding-top: 100px;
+
+  &__underline {
+    width: 100px;
+    height: 1px;
+    border-bottom: 1px white solid;
+    margin: auto;
+    margin:0 auto 40px auto;
+    
+  }
+
+  &__title {
+    font-size: 44px;
+  font-family: Gotham-bold;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 100px;
+  }
+}
+
+.slep {
+  margin: 15px;
+  width: 370px;
+  height: 515px;
+  background: white;
+
+
+  &__sub-block{
+    padding: 30px 25px 0 25px;
+  }
+
+  &__title {
+    font-size: 18px;
+    font-family: "Gotham-regular";
+    color: rgb(44, 64, 88);
+    text-transform: uppercase;
+    line-height: 1.545;
+  }
+
+  &__subtitle {
+    font-size: 18px;
+  font-family: "OpenSans";
+  color: rgb(75, 85, 98);
+  line-height: 1.667;
+  text-align: left;
+  }
+
+  &__person {
+    display: flex;
+    align-items: center;
+    // height: 100%;
+   
+  }
+
+  &__avatar {
+    width: 100px;
+    padding-right: 25px;
+    display: block;
+    padding-top: 25px;
+    box-sizing: border-box;
+    height: 100%;
+    // 
+  }
+
+}
+.description {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+ 
+
+  &__title {
+    font-size: 18px;
+    font-family: "Gotham-regular";
+    color: rgb(44, 64, 88);
+    text-transform: uppercase;
+    line-height: 1.222;
+    text-align: left;
+
+  }
+
+  &__date {
+   
+      font-size: 14px;
+      font-family: "Gotham-regular";
+      color: rgb(85, 183, 255);
+      line-height: 1.571;
+      text-align: left;
+      
+   
+    
+  }
+}
+
+.slider__standart {
+  width: 1200px;
+  margin: auto;
+}
+.slick-dots-news {
+  position: relative;
+  bottom: 0;
+  width: 10px;
+  display: flex;
+  // flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  // height: 210px;
+  width:200px;
+  margin: auto;
+}
+.slick-dots-news li button::before{
+    border: 1px solid white;
+    width: 10px;
+    height: 10px;  
+    border-radius: 50%;
+    content:''
+}  
+.slick-dots-news li button::before{
+  border: 1px solid white;
+  width: 10px;
+  height: 10px;  
+  border-radius: 50%;
+  content:''
+}  
+.slick-dots-news li.slick-active button::before{
+  background-color: white;
+} 
